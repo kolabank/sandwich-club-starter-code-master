@@ -30,8 +30,8 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        //Assign views as java objects
         ImageView ingredientsIv = findViewById(R.id.image_iv);
-
         txtAlsoKnownAs = findViewById(R.id.also_known_tv);
         txtIngredients = findViewById(R.id.ingredients_tv);
         txtPlaceOfOrigin = findViewById(R.id.origin_tv);
@@ -73,10 +73,13 @@ public class DetailActivity extends AppCompatActivity {
     }
 
 
+    //This method populates the user interface
+
     private void populateUI() {
 
         txtPlaceOfOrigin.setText(sandwich.getPlaceOfOrigin());
         txtDetailDescription.setText(sandwich.getDescription());
+
         //To list out values of alsoKnownAs
         List<String> alsoKnownAsDetail = sandwich.getAlsoKnownAs();
         for (int i = 0; i < alsoKnownAsDetail.size(); i++) {

@@ -28,6 +28,7 @@ public class JsonUtils {
             String placeOfOrigin = root.getString("placeOfOrigin");
             String description = root.getString("description");
             String imageLink = root.getString("image");
+
             //To get the JSON array elements for alsoKnownAs into an ArrayList
             JSONArray alsoKnownAs = name.getJSONArray("alsoKnownAs");
                 List<String> otherNamesArray = new ArrayList<String>();

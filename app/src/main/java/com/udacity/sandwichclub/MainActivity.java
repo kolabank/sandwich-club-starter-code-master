@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-     //   Toast.makeText(this, sandwichDetails().get(1).toString(), Toast.LENGTH_LONG).show();
 
         String[] sandwiches = getResources().getStringArray(R.array.sandwich_names);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
